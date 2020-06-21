@@ -33,4 +33,4 @@ HD44780_ENABLE = no         # Enable support for HD44780 based LCDs
 
 SPLIT_KEYBOARD = yes
 
-DEFAULT_FOLDER = deltasplit75/v2
+DEFAULT_FOLDER = deltasplit75/uhk
