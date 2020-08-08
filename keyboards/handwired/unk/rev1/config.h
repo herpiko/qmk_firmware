@@ -34,7 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-//#define MASTER_LEFT // Comment this line for the right half firmware
+#define MASTER_LEFT // Comment this line for the right half firmware
+//#define MASTER_RIGHT // Comment this line for the right half firmware
 
 // wiring of each half
 #define MATRIX_ROW_PINS { F5, B1, F6, B3, F7 }
@@ -93,3 +94,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
+
+#define ENCODERS_PAD_A { D1, D0}
+#define ENCODERS_PAD_B { F4 , D2}
+#define ENCODERS_PAD_A_RIGHT { D1, D0}
+#define ENCODERS_PAD_B_RIGHT { F4 , D2}
+/*
+*/

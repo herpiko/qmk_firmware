@@ -36,3 +36,4 @@ SPLIT_COMMUNICATION = serial
 
 DEFAULT_FOLDER = handwired/unk/rev1
 OLED_DRIVER_ENABLE = yes
+ENCODER_ENABLE = yes
