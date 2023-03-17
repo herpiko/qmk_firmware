@@ -17,8 +17,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#include "config_common.h"
 
-#define MASTER_LEFT // Comment this line for the right half firmware
+/* USB Device descriptor parameter */
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0x3060
+#define DEVICE_VER      0x0001
+#define DESCRIPTION     70% split keyboard
+
+/* key matrix size */
+// Rows are doubled-up
+#define MATRIX_ROWS 10
+#define MATRIX_COLS 8
+
+
+
+//#define MASTER_LEFT // Comment this line for the right half firmware
 
 // wiring of each half
 #define MATRIX_ROW_PINS { F5, B1, F6, B3, F7 }
@@ -29,6 +43,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
+
+/*
+ * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
+ */
+
+#define USE_SERIAL
+
+// Because we are using OLED on I2C.
+// USE_I2C does not to be defined here since OLED_DRIVER_ENABLE has been set in rules.mk
+#define SOFT_SERIAL_PIN D3
+#define SELECT_SOFT_SERIAL_SPEED 1
+
+/* define if matrix has ghost */
+//#define MATRIX_HAS_GHOST
+
+/* number of backlight levels */
+// #define BACKLIGHT_LEVELS 3
+
+/* Set 0 if debouncing isn't needed */
+#define DEBOUNCE 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -55,3 +89,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
+//#define NO_ACTION_MACRO
+//#define NO_ACTION_FUNCTION

@@ -1,18 +1,9 @@
 {
     "keyboard_name": "UNK",
-    "manufacturer": "herpiko",
     "url": "https://github.com/herpiko/unk",
     "maintainer": "herpiko",
-    "usb": {
-        "vid": "0xFEED",
-        "pid": "0x3060",
-        "device_version": "0.0.1"
-    },
-    "split": {
-        "soft_serial_pin": "D3"
-    },
-    "processor": "atmega32u4",
-    "bootloader": "caterina",
+    "width": 17,
+    "height": 5,
     "layouts": {
         "LAYOUT": {
             "layout": [
