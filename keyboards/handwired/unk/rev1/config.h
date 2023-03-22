@@ -31,9 +31,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 8
 
 
-
-#define MASTER_LEFT // Comment this line for the right half firmware
-
 // wiring of each half
 
 // Left
